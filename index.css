@@ -1,0 +1,16 @@
+table{
+    border: 100px;
+    line-height: 45px;
+}
+form{
+    background-color: rgb(7, 107, 124);
+    color: aliceblue;
+}
+#submit,#reset{
+    border: 100px;
+    width: 70px;
+    height: 35px;
+    background-color: aqua;
+    border-radius: 100px;
+}
+

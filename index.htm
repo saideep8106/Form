@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <fieldset>
+        <legend>FORM</legend>
+    
+    <form action="" method="  " novalidate><center>
+        <!-- autocomplete="off" to off the suggestions in form-->
+        <!-- action= where the data is stored , method= how data is stored  -->
+         <!-- novalidate == ignore the specific field -->
+        <br>
+        <h2><center>Application Form</center></h2>
+        <div>
+            <table>
+                <tr>
+                   <td> <label for="firstname">First Name :</label></td>
+                   <td> <input type="text" name="fname" id="firstname" placeholder="First Name" autofocus  required></td>
+
+                   <td> <label for="lastname">Last Name :</label></td>
+                   <td>  <input type="text" name="lname" id="lastname" placeholder="Last Name" > </td>
+                   
+                   <!-- http://127.0.0.1:5500/Super100-HTML/HTML/Forms/Forms.htm?fname=saideep&lname=siripuram&DOB=2000-11-30&age=23&M=on&mail_cheppu=&JD=on&Java=on&pswd=nek_nduku&pswd_conform_Cheyu=nek_nduku 
+                    
+                   --*if we use method="get" in form tag we get all the information which we give in the form 
+                   --*method lo get value este search browser lo mana data motham ostdhi including password
+                   -->
+
+                    <!-- 
+                            if we use  method="post " in form tag then we get a error page in the website, 
+                                                        the data is not showed in the search bar.....
+                                                        it is securred....
+
+                    -->
+
+            
+                </tr>
+                <tr>
+                    <td> <label for="dateofbirth">Date Of Birth :</label></td>
+                    <td> <input type="date" name="DOB" id="dateofbirth"></td>
+
+                    <td> <label for="age">Age :</label></td>
+                    <td> <input type="number" name="age" id="age" placeholder="Age"></td>
+
+                <br><br>
+                </tr>
+                <tr>
+                    <td> <label for="" >Gender :</label></td>
+                    <td> 
+                        <input type="radio" name="gender" value="male" >Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="others">Other`s
+                    </td>
+
+                    <td><label for="emailaddress">Email Address :</label></td>
+                    <td><input type="email" name="mail_cheppu" id="emailaddress" placeholder=" 📩 E-mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="" >Position Available :</label></td>
+                    <td><input type="radio" name="Position Available">Junior Developer 
+                        <input type="radio" name="Position Available">Mid-Level Developer 
+                        <input type="radio" name="Position Available"> Senior Developer
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="programminglanguage">Programming Language :</label></td>
+                    <td><input type="checkbox" name="Java" id="programminglanguage"> java 
+                        <input type="checkbox" name="Js" id="programminglanguage"> JavaScript 
+                        <input type="checkbox" name="py" id="programminglanguage"> Python</td>
+
+                    <td><label for="mobileno">Mobile NO :</label></td>
+                    <td><input type="tel" name="mobileno" id="mobileno" placeholder="📞Phone no!!"></td>
+                </tr>
+                <tr>
+                    <!-- dropdown -->
+                    <td><label for="">College list</label></td>
+                    <td><select name="clg" id="clg">
+                        <option value="None">None</option>
+                        <option value="sits">SITS</option>
+                        <option value="mlrit">MLRIT</option>
+                        <option value="mlrit">Anurag</option>
+                        <option value="mlrit">MallaReddy</option>
+                        <option value="mlrit">Indhur</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="col">Color`s</label></td>
+                    <td><input list="col" id="col"></td>
+                    <datalist id="col">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="pink">Pink</option>
+                    </datalist>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password :</label></td>
+                    <td><input type="password" name="pswd" id="password" placeholder="********"></td>
+
+                    <td><label for="conformpassword">Confirm Password :</label></td>
+                    <td><input type="password" name="pswd_conform_Cheyu" id="conformpassword" placeholder="********"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="comment">Comment</label></td>
+                    <td><textarea name="feedback"  id="comment" placeholder="Feedback!!!"></textarea></td>
+                </tr>
+            </table>
+                <br><br>
+                    <center><strong><input type="submit" id="submit" style="background-color: rgba(7, 33, 164, 0.711); color: white; width: 100px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="submit_karo" id="reset"style="background-color: rgba(7, 33, 164, 0.711); color: white; width: 100px;"></center>
+                <br><br>
+        </div>
+    </center></form>
+    </fieldset> 
+
+
+
+</body>
+</html>
